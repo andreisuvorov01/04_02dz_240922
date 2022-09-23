@@ -1,0 +1,23 @@
+﻿<Window x:Class="login1.glavMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:login1"
+        mc:Ignorable="d"
+        Title="glavMenu" Height="600" Width="900">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Главное меню" HorizontalAlignment="Left"/>
+        <Button Grid.Row="0"  x:Name="raspis"  FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="50" Margin="20" Click="raspis_Click">
+            <TextBlock Text="расписание" Margin="0" VerticalAlignment="Center" Height="20" TextAlignment="Center"/>
+        </Button>
+        <Button Grid.Row="0"  x:Name="teacher"  FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="50" Margin="200,20" >
+            <TextBlock Text="учитель" Margin="0" VerticalAlignment="Center" Height="20" TextAlignment="Center"/>
+        </Button>
+        <Frame Grid.Row="2" x:Name="glavFrame"/>
+    </Grid>
+</Window>
